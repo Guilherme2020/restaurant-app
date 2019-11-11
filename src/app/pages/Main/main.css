@@ -1,0 +1,35 @@
+.main-container {
+    width: 100%;
+    padding-left: 30px;
+}
+
+.main-container .title  {
+    top: 38px;
+    left: 64px;
+    width: 748px;
+    height: 64px;
+    
+}
+
+.main-container .title h1 {
+    font-family: HelveticaNeue-Light;
+    font-weight: normal;
+    font-size: 54px;
+    text-align: left;
+    letter-spacing: 0.96px;
+    color: #333333;
+    opacity: 1;
+}
+.main-container .text-info {
+    top: 128px;
+    left: 64px;
+    width: 752px;
+    height: 64px;
+}
+
+.main-container .text-info p {
+    text-align: left;
+    letter-spacing: 0.92px;
+    color: #666666;
+    opacity: 1;
+}
