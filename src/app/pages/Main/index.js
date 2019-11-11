@@ -1,4 +1,5 @@
 import React,{Component} from 'react'
+import Rating from 'react-rating'
 import apis from '../../services/api'
 import './main.css'
 
@@ -7,7 +8,8 @@ class Main extends Component{
     constructor(props){
         super(props);
         this.state = {
-            restaurants: []
+            restaurants: [],
+            carregando : false,
         }
     }
     makeRequest(){
@@ -49,11 +51,30 @@ class Main extends Component{
                 </div>
                 
                 <div className="restaurant-item">
-                    
 
+                  
+                        {
+                            this.state.restaurants.map(restaurant => (
+                                <div className={'restaurant-item-container'}  key={restaurant.id} >
+                                    <img src={restaurant.image_url} alt={restaurant.name}/>
+                                    <p>{restaurant.name}</p>
+                                    <span>
+                                        {
+                                            <Rating 
+                                                initialRating={restaurant.rating} readonly={true} 
+                                            />  
+                                        }
+                                    </span>
+                                    <p>{restaurant.categories[0].title}</p>
+                                    <p>price{restaurant.price}</p>
+                                    <p>{restaurant.is_closed == false ? 'OPEN NOW' : "CLOSED"}</p>
+                                </div>
+                            ))
+                        }
                 </div>
-
+              
             </section>
+             
         )
     }
 
