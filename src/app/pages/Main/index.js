@@ -1,5 +1,6 @@
 import React,{Component} from 'react'
-import Rating from 'react-rating'
+import StarRatingComponent from 'react-star-rating-component';
+
 import apis from '../../services/api'
 import './main.css'
 
@@ -46,32 +47,46 @@ class Main extends Component{
 
                 </div>
 
-                <div className="list-restarant-item title">
-                    <h1>All Restaurants</h1>
+                <div className="restaurant-container">
+                    <div className="list-restarant-item title">
+                        <h1>All Restaurants</h1>
+                    </div>
+                    
+                    <div className="restaurant-item">
+
+                    
+                            {
+                                this.state.restaurants.map(restaurant => (
+                                    <div className={'restaurant-item-container'}  key={restaurant.id} >
+                                        <img src={restaurant.image_url} alt={restaurant.name}/>
+                                        <p>{restaurant.name}</p>
+                                        <span>
+                                                                        
+                                        <StarRatingComponent 
+                                            name="rate2" 
+                                            editing={false}
+                                            starCount={5}
+                                            starColor={'#002B56'}
+                                            emptyStarColor={'yellow'}
+                                            value={restaurant.rating}
+                                        />
+                                        </span>
+                                        <p>{restaurant.categories[0].title}</p>
+                                        <p>price{restaurant.price}</p>
+                                        <p>{restaurant.is_closed == false ? 'OPEN NOW' : "CLOSED"}</p>
+                                    </div>
+                                ))
+                            }
+                    </div>
                 </div>
                 
-                <div className="restaurant-item">
-
-                  
-                        {
-                            this.state.restaurants.map(restaurant => (
-                                <div className={'restaurant-item-container'}  key={restaurant.id} >
-                                    <img src={restaurant.image_url} alt={restaurant.name}/>
-                                    <p>{restaurant.name}</p>
-                                    <span>
-                                        {
-                                            <Rating 
-                                                initialRating={restaurant.rating} readonly={true} 
-                                            />  
-                                        }
-                                    </span>
-                                    <p>{restaurant.categories[0].title}</p>
-                                    <p>price{restaurant.price}</p>
-                                    <p>{restaurant.is_closed == false ? 'OPEN NOW' : "CLOSED"}</p>
-                                </div>
-                            ))
-                        }
+                <div>
+                    <button>
+                        LOAD MORE
+                    </button>
                 </div>
+
+        
               
             </section>
              

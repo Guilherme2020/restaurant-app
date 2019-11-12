@@ -1,7 +1,6 @@
 .main-container {
     width: 100%;
     padding-left: 30px;
-    width: 1440px;overflow-x: hidden;
     height: 1757px;
 }
 
@@ -30,6 +29,7 @@
 }
 
 .main-container .text-info p {
+    font-size: 22px;
     text-align: left;
     letter-spacing: 0.92px;
     color: #666666;
@@ -48,6 +48,12 @@
 
 }
 
+.main-container .restaurant-container {
+    top: 369px;
+    left: 64px;
+    width: 1312px;
+    opacity: 1;
+}
 
 .main-container .list-restarant-item .title{
     
@@ -71,13 +77,12 @@
     top: 451px;
     left: 64px;
     width: 304px;
-    height: 428px;
     opacity: 1;
 }
 .main-container .restaurant-item   {
 
     display: grid;
-    grid-template-columns: repeat(5,1fr);
+    grid-template-columns: repeat(4,1fr);
     grid-gap: 30px;
 }
 

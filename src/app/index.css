@@ -1,12 +1,29 @@
+* {
 
+    /* margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box */
+  
+}
+  
+html, body, #root {
+    
+    min-height: 100%;
+  
+}
+  
 body {
+    
+    overflow-x: hidden;
+    background-size: cover;
+    max-height: 100%;
 
-    top: 0px;
+    /* top: 0px;
     left: 0px;
     width: 1440px;
-    overflow-x: hidden;
     height: 1757px;
     background: #FFFFFF 0% 0% no-repeat padding-box;
-    opacity: 1;
+    opacity: 1; */
 
 }
