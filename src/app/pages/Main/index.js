@@ -59,29 +59,47 @@ class Main extends Component{
                                 this.state.restaurants.map(restaurant => (
                                     <div className={'restaurant-item-container'}  key={restaurant.id} >
                                         <img src={restaurant.image_url} alt={restaurant.name}/>
-                                        <p>{restaurant.name}</p>
-                                        <span>
-                                                                        
-                                        <StarRatingComponent 
-                                            name="rate2" 
-                                            editing={false}
-                                            starCount={5}
-                                            starColor={'#002B56'}
-                                            emptyStarColor={'yellow'}
-                                            value={restaurant.rating}
-                                        />
-                                        </span>
-                                        <p>{restaurant.categories[0].title}</p>
-                                        <p>price{restaurant.price}</p>
-                                        <p>{restaurant.is_closed == false ? 'OPEN NOW' : "CLOSED"}</p>
+                                        <h1>{restaurant.name}</h1>
+                                        <div className="restaurant-item-rating">
+                                            <span>
+
+                                                <StarRatingComponent
+                                                    name="rate2"
+                                                    editing={false}
+                                                    starCount={5}
+                                                    starColor={'#002B56'}
+                                                    emptyStarColor={'yellow'}
+                                                    value={restaurant.rating}
+                                                />
+                                            </span>
+                                        </div>
+                                        
+                                        <div className="restaurant-item-category-price">
+                                            <p>{restaurant.categories[0].title}-{restaurant.price}</p>   
+                                            
+                                            
+
+                                            <div className="status">
+                                                <div className="dot"></div>
+                                                <div style={{width:5}}/>
+                                                <p>   {restaurant.is_closed == false ? 'OPEN NOW' : "CLOSED"}</p>
+                                            </div>
+                                           
+                                        </div>
+                                        <div>
+                                            <button className="btn-more">
+                                                LEARN MORE
+                                            </button>
+                                        </div>
+                                      
                                     </div>
                                 ))
                             }
                     </div>
                 </div>
                 
-                <div>
-                    <button>
+                <div className="container-load-more">
+                    <button className="btn-load-more">
                         LOAD MORE
                     </button>
                 </div>

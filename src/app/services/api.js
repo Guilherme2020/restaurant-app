@@ -11,13 +11,15 @@ const api = axios.create({
 
 
 let endpoints = {
-    search: '/search?location=lasvegas'
+    search: '/search?location=lasvegas',
+    categories: '/categories?location=lasvegas'
 }
 
 
 const apis = {
 
-    loadRestaurants: () => api.get(endpoints.search)
+    loadRestaurants: () => api.get(endpoints.search),
+    loadCategories: () => api.get(endpoints.categories)
 
 }
 
