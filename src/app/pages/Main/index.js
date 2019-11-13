@@ -202,16 +202,18 @@ class Main extends Component{
                                            
                                         </div>
                                         <div>
-                                            <button className="btn-more">
-                                            <Link 
+                                        <Link 
                                                 to={{ 
-                                                    pathname: `/detailView/${restaurant.restaurant.id}`,
-                                                    state: { restaurant: restaurant.id }  
+                                                    pathname: `/detailView/${restaurant.id}`,
+                                                    state: { restaurant : restaurant }  
                                                 }}
                                             >
+                                            <button className="btn-more">
+                                           
                                                 LEARN MORE
-                                            </Link>
+                                           
                                             </button>
+                                            </Link>
                                         </div>
                                       
                                     </div>
