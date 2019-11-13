@@ -61,6 +61,46 @@
     flex: 1;
     padding: 20px;
 }
+.main-container .filter-restaurants .filter p{
+    font-size: 16;
+    font-weight: HelveticaNeue;
+    top: 254px;
+    left: 184px;
+    width: 83px;
+    height: 18px;
+    text-align: left;
+    color: #002B56;
+    opacity: 1;
+}
+.main-container .container-clear-all {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+}
+.main-container  .btn-clear-all{
+    top: 1467px;
+    background: white;
+    left: 512px;
+    width: 151px;
+    height: 38px;
+    border: 1px solid #002B56;
+    border-radius: 2px;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #002B53;
+    text-transform: uppercase;
+    opacity: 1;
+}
+.select-container{
+    top: 277px;
+    left: 301px;
+    width: 97px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 6px 5px #0000001A;
+    border: 1px solid #C8C8C8;
+    opacity: 1;
+}
 .main-container .restaurant-container {
     top: 369px;
     left: 64px;
@@ -151,6 +191,15 @@
     background: #00E8A4 0% 0% no-repeat padding-box;
     opacity: 1;
     border-radius: 5px;
+}
+
+.main-container .restaurant-item-category-price .dot-not-open{
+    top: 772px;
+    left: 641px;
+    width: 8px;
+    height: 8px;
+    background: #FF3548 0% 0% no-repeat padding-box;
+    opacity: 1;
 }
 .main-container .restaurant-item-category-price .status{
     flex-direction: row;
