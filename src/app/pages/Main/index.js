@@ -11,6 +11,7 @@ class Main extends Component{
         this.state = {
             restaurants: [],
             carregando : false,
+            is_open: true
         }
     }
     makeRequest(){
@@ -44,7 +45,16 @@ class Main extends Component{
                 </div>
 
                 <div className="filter-restaurants">
-
+                    <div className="filter" >
+                        <p>Filter By: </p>
+                        <input type="radio" name="open-now" value={this.state.is_open} /> Open Now
+                        <label for="price">Price</label>
+                        <select name="price">
+                            <option value="valor1">Valor 1</option> 
+                            <option value="valor2" selected>Valor 2</option>
+                            <option value="valor3">Valor 3</option>
+                        </select>
+                    </div>
                 </div>
 
                 <div className="restaurant-container">
