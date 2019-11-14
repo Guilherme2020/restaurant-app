@@ -11,13 +11,18 @@ const api = axios.create({
 
 let endpoints = {
     search: 'businesses/search?location=lasvegas',
+    businessesDetail: 'businesses',
+    businessesReview: 'businesses',
     categories: 'categories?locale=en_US'
 }
 
 
 const apis = {
+
     loadFilterRestaraunts: (params) => api.get(`${endpoints.search}${params}`),
     loadRestaurants: () => api.get(endpoints.search),
+    detailRestaurant: (id) => api.get(`${endpoints.businessesDetail}/${id}`),
+    reviews: (id) => api.get(`${endpoints.businessesReview}/${id}/${'reviews'}`),
     loadCategories: () => api.get(endpoints.categories)
 
 }

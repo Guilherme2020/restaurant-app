@@ -1,0 +1,99 @@
+.main-container {
+    top: 0px;
+    left: 0px;
+    width: 1440px;
+    /* height: 1757px; */
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.main-container .title-restaurant-info {
+
+
+    top: 38px;
+    left: 64px;
+    width: 1312px;
+    height: 248px;
+    opacity: 1;
+
+}
+
+.main-container .title-restaurant-info h1 {
+    font-size: 54px;
+    font-family: HelveticaNeue;
+    top: 38px;
+    left: 64px;
+    width: 748px;
+   
+    text-align: left;
+    letter-spacing: 0.96px;
+    color: #333333;
+    opacity: 1;
+
+}
+.main-container  .restaurant-rating span{
+    top: 759px;
+    left: 85px;
+    width: 20px;
+    height: 19px;
+}
+
+.restaurant-info{
+    top: 173px;
+    left: 64px;
+    width: 175px;
+    height: 25px;
+}
+.restaurant-info p{
+    text-align: left;
+    letter-spacing: 0.92px;
+    color: #666666;
+    opacity: 1;
+}
+
+.restaurant-reviews {
+    top: 740px;
+    left: 64px;
+    width: 91%;
+    
+    opacity: 1;
+
+    
+}
+.restaurant-preview-comment{
+    width: 66%;
+    margin-left: 60px;
+
+}
+.restaurant-preview-comment p  {
+    top: 788px;
+    left: 400px;
+    width: 976px;
+    font-size: 20px;
+    text-align: left;
+    letter-spacing: 1px;
+    color: #000000;
+    opacity: 1;
+}
+.restaurant-review-item{
+    flex-direction: row;
+    display: flex;
+}
+.restaurant-review-profile {
+    display: flex;
+    flex-direction: row;
+}
+.restaurant-review-profile div {
+
+    width: 90%;
+    margin-left: 23px;
+
+}
+.restaurant-review-profile img{
+    top: 740px;
+    left: 64px;
+    width: 80px;
+    height: 80px;
+    background: #D8D8D8 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
