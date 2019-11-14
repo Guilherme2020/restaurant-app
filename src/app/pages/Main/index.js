@@ -182,7 +182,7 @@ class Main extends Component{
                                                     editing={false}
                                                     starCount={5}
                                                     starColor={'#002B56'}
-                                                    emptyStarColor={'yellow'}
+                                                    emptyStarColor={'white'}
                                                     value={restaurant.rating}
                                                 />
                                             </span>
