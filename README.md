@@ -6,6 +6,10 @@ The functionality of the web application is to list restaurants and to show deta
 
 ## Available Scripts
 
+First install the dependencies
+
+### `npm install`
+
 In the project directory, you can run:
 
 ### `npm run start`
