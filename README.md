@@ -4,6 +4,28 @@ This project was created using ReactJS (https://reactjs.org/) without using a st
 The functionality of the web application is to list restaurants and to show details of them, such as popularity, price, if it is open. In this sense, the public API https://www.yelp.com/developers/documentation/v3/business was used, which enabled the data to feed the application.
 
 
+<p align="center">
+  <a href="https://opensource.org/licenses/MIT">
+    <img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License MIT">
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://opensource.org/licenses/MIT">
+    <img src="screenshots/01.png" alt="License MIT">
+  </a>
+</p>
+
+<br>
+
+<p align="center">
+  <a href="https://opensource.org/licenses/MIT">
+    <img src="screenshots/02.png" alt="License MIT">
+  </a>
+</p>
+
+
+
 ## Available Scripts
 
 First install the dependencies
@@ -26,4 +48,4 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 ### Optimization opportunities
 
-As optimization possibilities see if the adaptation of the application in the mobile version, use of next.js to enable SSR and bring SEO to the application in this way the application renders on the server and gives the possibility of being well ranked in search engines.
+As optimization possibilities see if the adaptation of the application in the mobile version, use of next.js to enable SSR and bring SEO to the application in this way the application renders on the server and gives the possibility of being well ranked in search engines, use of storybook, use of test unit.
